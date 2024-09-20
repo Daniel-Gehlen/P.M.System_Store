@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.M.System Store</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Welcome to P.M.System Store</h1>
+    <p>This is your frontend for managing categories and products.</p>
+
+    <!-- Formulário para adicionar uma categoria -->
+    <h2>Add a Category</h2>
+    <form id="categoryForm">
+        <label for="categoryName">Category Name:</label>
+        <input type="text" id="categoryName" name="categoryName" required>
+        <button type="submit">Add Category</button>
+    </form>
+
+    <!-- Botão para carregar categorias -->
+    <h2>Categories</h2>
+    <button id="loadCategories">Load Categories</button>
+    <ul id="categoryList"></ul>
+
+    <!-- Formulário para adicionar um produto a uma categoria -->
+    <h2>Add a Product</h2>
+    <form id="productForm">
+        <label for="categoryId">Category ID:</label>
+        <input type="number" id="categoryId" name="categoryId" required>
+        <label for="productName">Product Name:</label>
+        <input type="text" id="productName" name="productName" required>
+        <label for="productPrice">Price:</label>
+        <input type="number" id="productPrice" name="productPrice" required>
+        <button type="submit">Add Product</button>
+    </form>
+
+    <!-- Listagem de produtos -->
+    <h2>Products</h2>
+    <ul id="productList"></ul>
+
+    <script src="/app.js"></script>
+</body>
+</html>
